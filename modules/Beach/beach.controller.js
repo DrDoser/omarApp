@@ -95,14 +95,11 @@ export const searchBeach = async (req, res, next) => {
   }
 };
 
-// add a new line before numbers using regex
-// const text = "1. one 2. two 3. three";
+// add a 2 new lines before numbers using regex
 
 const tipsNewLine = (tips) => {
-  // (\d+)(?=\s*-)
-
   const regex = /(\d+)(?=\s*-)/g;
-  const newTips = tips.replace(regex, "\n$&");
+  const newTips = tips.replace(regex, "\n\n$&");
   // console.log(newTips);
   return newTips;
 };
