@@ -139,10 +139,12 @@ const redSea = [
 
 const cityWaterCirculation = (city) => {
   if (mediterraneanSea.includes(city)) {
-    return `${city} : Water circulation of Mediterranean sea 	
+    return `${city} : Water circulation of Mediterranean sea
+
 The water in the Mediterranean Sea flows from west to east, driven by the water flowing in from the Atlantic Ocean. As the water flows east, it changes because of the sun and the air. The Mediterranean Sea's water circulation is important for the region's climate and ecology.`;
   } else if (redSea.includes(city)) {
     return `${city} : Water circulation of red sea
+    
 The water in the Red Sea flows from south to north, then back south again, but along the bottom of the sea. This is because the water gets warmer and saltier as it flows north, so it becomes denser and sinks.`;
   } else {
     return city;
